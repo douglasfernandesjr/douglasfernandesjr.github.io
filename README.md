@@ -1,1 +1,0 @@
-# douglasfernandesjr.github.io
