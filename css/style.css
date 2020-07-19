@@ -145,16 +145,10 @@ hr.small {
 }
 .intro-header {
   background-color: #fff;
-  margin-bottom: 50px;
 }
 .intro-header .site-heading {
-  padding: 60px 0 25px;
+  padding: 60px 0 0;
   color: #404040;
-}
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading {
-    padding: 60px 0 25px;
-  }
 }
 .intro-header .site-heading.archives {
   color: #0085a1;
@@ -182,6 +176,7 @@ hr.small {
   border: 3px solid #fff;
   box-shadow: 0 0 0 1px #ebebeb;
   border-radius: 63px;
+  background-position: center center;
 }
 .intro-header .site-heading .site-title {
   margin-top: 0;
@@ -194,22 +189,25 @@ hr.small {
   font-weight: 300;
   margin: 10px 0 0;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading .site-title {
-    font-size: 50px;
-  }
-}
-.intro-header .post-heading h1 {
+.intro-header .post-heading h1,
+.intro-header .page-heading h1 {
   font-size: 50px;
 }
-.intro-header .post-heading h2.post-subheading {
+.intro-header .post-heading h2.post-subheading,
+.intro-header .page-heading h2.post-subheading {
   font-weight: 600;
   font-style: italic;
 }
 @media only screen and (min-width: 768px) {
-  .intro-header .post-heading h1 {
+  .intro-header .post-heading h1,
+  .intro-header .page-heading h1 {
     font-size: 55px;
   }
+}
+.intro-header .post-heading .page-cover,
+.intro-header .page-heading .page-cover {
+  max-width: 100%;
+  margin-bottom: 10px;
 }
 .post-preview > a {
   color: #404040;
@@ -273,8 +271,8 @@ hr.small {
 .post-tags,
 .post-categories {
   font-size: 15px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .post-tags a,
 .post-categories a {
