@@ -3,7 +3,8 @@
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.background-cover {
+.background-cover,
+.intro-header.intro-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -77,6 +78,13 @@ hr.small {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
+  cursor: pointer;
+}
+.navbar-custom .navbar-brand .nav-icon {
+  height: 20px;
+  float: left;
+  padding-right: 5px;
+  cursor: pointer;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -143,8 +151,22 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 }
-.intro-header {
+.intro-header.intro-cover {
   background-color: #fff;
+  background-color: #808080;
+  background-position: center center;
+  background-attachment: scroll;
+}
+.intro-header.intro-cover .site-heading {
+  padding: 60px 0 0;
+  color: #fff;
+}
+.intro-header.intro-cover hr.small {
+  border-color: #fff;
+}
+.intro-header.intro-cover .post-heading {
+  color: #fff;
+  padding-bottom: 60px;
 }
 .intro-header .site-heading {
   padding: 60px 0 0;
@@ -303,6 +325,8 @@ footer .copyright {
   font-size: 14px;
   text-align: center;
   margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .floating-label-form-group {
   font-size: 14px;

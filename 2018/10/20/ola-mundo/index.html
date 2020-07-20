@@ -148,13 +148,24 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/" title="Voltar para o início ">
-                <i class="fa fa-home" aria-hidden="true"></i>
+                
+                <img class="nav-icon"  src="/images/general/logo.png" /> Douglas Fernandes
+                
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                
+                <li class="">
+                    <a href="/sobre"
+                        title="Sobre">
+                        
+                        Sobre
+                        
+                    </a>
+                </li>
                 
                 <li class="">
                     <a href="/tags"
@@ -165,29 +176,11 @@
                     </a>
                 </li>
                 
-                <li class="">
-                    <a href="/categories"
-                        title="Categorias">
-                        
-                        Categorias
-                        
-                    </a>
-                </li>
-                
                 <li class="with-icon">
                     <a href="https://github.com/douglasfernandesjr"
                         title="GitHub">
                         
                         <i class="fa fa-github fa-stack-2x"></i>
-                        
-                    </a>
-                </li>
-                
-                <li class="">
-                    <a href="/sobre"
-                        title="Sobre">
-                        
-                        Sobre
                         
                     </a>
                 </li>
@@ -203,20 +196,15 @@
     <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 
-<header class="intro-header">
+<header class="intro-header intro-cover" style="background-image: url(&#39;/images/test/contact-bg.jpg&#39;);">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <a id="avatar" href="/" style="background-image: url('/images/general/me.jpg')"></a>
-                    <h2 class="site-title">Douglas Fernandes</h2>
                     <span class="subheading">Programação e outras coisas pseudo-aleatórias.</span>
+                    <hr class="small">
                 </div>
                 <div class="post-heading">
-                    
-                    <hr class="small">
-                    <img class="page-cover" src="/images/test/contact-bg.jpg">
-                    
                     <h1>Olá Mundo!</h1>
                     
                     <h2 class="post-subheading">
@@ -265,7 +253,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h1 id="Tenho-duas-grandes-motivacoes-para-criar-este-blog"><a href="#Tenho-duas-grandes-motivacoes-para-criar-este-blog" class="headerlink" title="Tenho duas grandes motivações para criar este blog."></a>Tenho duas grandes motivações para criar este blog.</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
-
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * badge.js | global hexo script.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * Usage:</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * &#123;% badge [class]<span class="doctag">@Text </span>%&#125;</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [class] : primary | secondary | success | danger | warning | info | light | dark.</span></span><br><span class="line"><span class="comment"> *           If not defined, default class will be selected.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">postBadge</span> (<span class="params">args</span>) </span>&#123;</span><br><span class="line">    args = args.join(<span class="string">' '</span>).split(<span class="string">'@'</span>);</span><br><span class="line">    <span class="keyword">var</span> classes = args[<span class="number">0</span>] || <span class="string">'default'</span>;</span><br><span class="line">    <span class="keyword">var</span> text = args[<span class="number">1</span>] || <span class="string">''</span>;</span><br><span class="line">  </span><br><span class="line">    classes = classes.trim();</span><br><span class="line">    !text &amp;&amp; hexo.log.warn(<span class="string">'badge text must be defined!'</span>);</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> <span class="string">'&lt;span class="badge badge-'</span> + classes + <span class="string">'"&gt;'</span> + text + <span class="string">'&lt;/span&gt;'</span>;</span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line">hexo.extend.tag.register(<span class="string">'badge'</span>, postBadge, &#123; <span class="attr">ends</span>: <span class="literal">false</span> &#125;);</span><br></pre></td></tr></table></figure>
 
 <p>A primeira lição que todo mundo que entra no mundo da computação aprender é : </p>
 <p>A segunda é que a minha memória não é muito boa (rs), e ter um resumo das soluções que eu encontrei para diversos problemas, de maneira organizada, vai ajudar muito :).</p>
@@ -296,52 +284,56 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     
-                        <li>
-                            <a href="https://twitter.com/dougfernandesjr" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
+                    <li>
+                        <a href="https://twitter.com/dougfernandesjr" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                     
 
                     
 
                     
-                        <li>
-                            <a href="https://github.com/douglasfernandesjr" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
+                    <li>
+                        <a href="https://github.com/douglasfernandesjr" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                     
 
                     
-                        <li>
-                            <a href="https://www.linkedin.com/in/douglasfernandesjr" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/douglasfernandesjr" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                     
 
                     
 
                     
                 </ul>
-                <p class="copyright text-muted">&copy; 2020 Douglas Fernandes<br></p>
-                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
-                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+                <p class="copyright text-muted">&copy; 2020
+                    Douglas Fernandes<br></p>
+                    <p class="copyright text-muted">Powered By <a
+                        target="_blank" href="https://hexo.io/">Hexo</a> | Theme <a target="_blank"
+                        href="https://github.com/douglasfernandesjr/hexo-theme-pesonal-clean-blog">Personal Clean
+                        Blog</a></p>
+                <p class="copyright text-muted">Fork from Theme <a target="_blank"
+                        href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog</a></p>
             </div>
         </div>
     </div>
 </footer>
-
 
     <!-- After footer scripts -->
     
