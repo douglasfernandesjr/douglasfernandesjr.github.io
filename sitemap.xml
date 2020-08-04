@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.doug.dev.br/2020/criando-um-blog-estatico-com-hexo/</loc>
+    
+    <lastmod>2020-08-04T03:02:19.594Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.doug.dev.br/2020/ola-mundo/</loc>
     
-    <lastmod>2020-08-01T20:06:34.284Z</lastmod>
+    <lastmod>2020-08-03T01:17:30.298Z</lastmod>
     
   </url>
   
