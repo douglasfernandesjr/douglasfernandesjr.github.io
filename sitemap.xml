@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.doug.dev.br/2020/usando-multiplos-arquivos-de-configuracao-no-hexo/</loc>
+    
+    <lastmod>2020-08-08T19:53:53.051Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.doug.dev.br/2020/criando-um-blog-estatico-com-hexo/</loc>
     
-    <lastmod>2020-08-05T00:59:17.851Z</lastmod>
+    <lastmod>2020-08-08T18:41:20.209Z</lastmod>
     
   </url>
   
