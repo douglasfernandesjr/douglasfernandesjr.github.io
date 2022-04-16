@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.doug.dev.br/2020/ola-mundo/</loc>
+    
+    <lastmod>2022-04-16T01:14:05.276Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.doug.dev.br/2022/Instalacoes-e-configuracoes-para-programar-em-C-usando-o-VS-Code/</loc>
     
     <lastmod>2022-01-26T23:35:32.874Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://www.doug.dev.br/2020/criando-um-blog-estatico-com-hexo/</loc>
     
     <lastmod>2020-08-08T18:41:20.209Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.doug.dev.br/2020/ola-mundo/</loc>
-    
-    <lastmod>2020-08-03T01:17:30.298Z</lastmod>
     
   </url>
   
